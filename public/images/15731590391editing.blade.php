@@ -1,0 +1,15 @@
+$table->bigIncrements('id');
+$table->integer('user_id');
+$table->integer('category_id');
+$table->string('post_title');
+$table->integer('bedrooms');
+$table->integer('batherooms');
+$table->integer('balconies');
+$table->integer('monthly_rent');
+$table->string('post_picture')->default('default.jpg');
+$table->text('description');
+$table->text('address');
+$table->string('email');
+$table->tinyInteger('is_approved')->default('0');
+$table->string('mobile_no',11)->unique();
+$table->timestamps();
