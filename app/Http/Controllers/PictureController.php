@@ -70,7 +70,7 @@ class PictureController extends Controller
         $post_delete = Picture::find($delete_id);
         $post_delete->delete();
 
-        // alert()->question('Are you sure to delete?',$post_delete->title)->showCancelButton()->showConfirmButton()->focusConfirm(true);
+//         alert($post_delete->delete())->question('Are you sure to delete?',$post_delete->title)->showCancelButton()->showConfirmButton()->focusConfirm(true);
 
         toast('Your Post has been deleted successfully!','success');
 

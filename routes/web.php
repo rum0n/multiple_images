@@ -23,6 +23,6 @@ Route::get('/picture', 'PictureController@index')->name('pic_form');
 
 Route::post('/picture/upload', 'PictureController@upload')->name('pic_upload');
 
-Route::get('/picture/delete/{del_id}', 'PictureController@delete')->name('pic_delete');
+Route::delete('/picture/delete/{del_id}', 'PictureController@delete')->name('pic_delete');
 
 
